@@ -198,7 +198,7 @@ export default function Home() {
                   </div>
                 </div>
                 <Image
-                  src="/placeholder.svg?height=400&width=400"
+                  src="/placeholder2.png?height=400&width=400"
                   width={400}
                   height={400}
                   alt="Platform features"
@@ -225,7 +225,7 @@ export default function Home() {
                 <div className="rounded-lg border bg-background p-6">
                   <div className="flex items-start gap-4">
                     <Image
-                      src="/placeholder.svg?height=60&width=60"
+                      src="/profile.png?height=60&width=60"
                       width={60}
                       height={60}
                       alt="Farmer portrait"
@@ -244,7 +244,7 @@ export default function Home() {
                 <div className="rounded-lg border bg-background p-6">
                   <div className="flex items-start gap-4">
                     <Image
-                      src="/placeholder.svg?height=60&width=60"
+                      src="/profile.png?height=60&width=60"
                       width={60}
                       height={60}
                       alt="Business owner portrait"
@@ -359,7 +359,7 @@ export default function Home() {
             </div>
           </section> */}
 
-          <section className="w-full py-12 md:py-24 lg:py-32 bg-green-600 dark:bg-green-800 text-white">
+          <section className="w-full py-12 md:py-24 lg:py-32 bg-green-600 dark:bg-green-700 text-white">
             <div className="container px-4 md:px-6">
               <div className="flex flex-col items-center justify-center space-y-4 text-center">
                 <div className="space-y-2">
@@ -371,7 +371,7 @@ export default function Home() {
                   </p>
                 </div>
                 <div className="flex flex-col gap-2 min-[400px]:flex-row">
-                  <Button size="lg" className="bg-white text-green-600 hover:bg-gray-100">
+                  <Button size="lg" className="bg-white text-green-600 hover:bg-gray-300">
                     Sign Up Now
                   </Button>
                   <Button size="lg" variant="outline" className="border-white text-white hover:bg-green-700">
@@ -386,7 +386,7 @@ export default function Home() {
           <div className="container flex flex-col items-center justify-between gap-4 md:flex-row md:gap-0">
             <div className="flex items-center gap-2">
               <Sprout className="h-6 w-6 text-green-600" />
-              <span className="text-xl font-bold">FarmConnect</span>
+              <span className="text-xl font-bold">AgriConnect</span>
             </div>
             <nav className="flex gap-4 sm:gap-6">
               <Link href="#" className="text-sm font-medium hover:underline underline-offset-4">
@@ -395,12 +395,18 @@ export default function Home() {
               <Link href="#" className="text-sm font-medium hover:underline underline-offset-4">
                 Privacy
               </Link>
-              <Link href="#" className="text-sm font-medium hover:underline underline-offset-4">
+              <a
+                href="https://www.linkedin.com/in/rahul-rawat01/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-sm font-medium hover:underline underline-offset-4"
+              >
                 Contact
-              </Link>
+              </a>
+
             </nav>
             <p className="text-sm text-muted-foreground">
-              &copy; {new Date().getFullYear()} FarmConnect. All rights reserved.
+              &copy; {new Date().getFullYear()} AgriConnect. All rights reserved.
             </p>
           </div>
         </footer>

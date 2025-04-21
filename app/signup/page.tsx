@@ -20,11 +20,11 @@ export default function SignupPage() {
           <div className="mx-auto w-16 h-16 mb-2 relative">
             <div className="absolute inset-0 rounded-full bg-green-100 animate-pulse"></div>
             <Image
-              src="/placeholder.svg?height=64&width=64"
+              src="/logo.png?height=64&width=64"
               alt="Farmers Marketplace Logo"
               width={64}
               height={64}
-              className="relative z-10"
+              className="relative z-10 rounded-xl"
             />
           </div>
           <CardTitle className="text-2xl font-bold text-green-800">Join AgriConnecct</CardTitle>

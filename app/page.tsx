@@ -28,7 +28,7 @@ export default function Home() {
           <div className="container flex h-16 items-center justify-between">
             <div className="flex items-center gap-2">
               <Sprout className="h-6 w-6 text-green-600" />
-              <span className="text-xl font-bold">FarmConnect</span>
+              <span className="text-xl font-bold">AgriConnect</span>
             </div>
             <nav className="hidden md:flex gap-6">
               <Link href="#how-it-works" className="text-sm font-medium hover:text-primary">
@@ -40,8 +40,8 @@ export default function Home() {
               <Link href="#testimonials" className="text-sm font-medium hover:text-primary">
                 Testimonials
               </Link>
-              <Link href="#pricing" className="text-sm font-medium hover:text-primary">
-                Pricing
+              <Link href="/products" className="text-sm font-medium hover:text-primary">
+                Products
               </Link>
             </nav>
             <div className="flex items-center gap-4">
@@ -70,8 +70,8 @@ export default function Home() {
                     </p>
                   </div>
                   <div className="flex flex-col gap-2 min-[400px]:flex-row">
-                    <Button size="lg" className="bg-green-600 hover:bg-green-700">
-                      <Link href="/signup" className="flex items-center">
+                    <Button size="lg" className="bg-green-500 hover:bg-green-600 ">
+                      <Link href="/signup" className="flex items-center ">
                         Get Started <ArrowRight className="ml-2 h-4 w-4" />
                       </Link>
                     </Button>
@@ -81,19 +81,24 @@ export default function Home() {
                   </div>
                   <div className="mt-6 flex w-full max-w-md items-center space-x-2">
                     <Input type="text" placeholder="Search for crops..." className="rounded-l-md border-r-0" />
-                    <Button type="submit" className="rounded-l-none bg-green-600 hover:bg-green-700">
+                    <Button type="submit" className="rounded-l-none bg-green-500 hover:bg-green-700">
                       <Search className="h-4 w-4" />
                       <span className="sr-only">Search</span>
                     </Button>
                   </div>
                 </div>
+
                 <Image
-                  src="/placeholder.svg?height=550&width=550"
+                  src="/placeholder1.png?height=550&width=550"
                   width={550}
                   height={550}
                   alt="Farm produce"
-                  className="mx-auto aspect-video overflow-hidden rounded-xl object-cover sm:w-full lg:aspect-square"
+                  className="mx-auto aspect-video overflow-hidden rounded-xl object-cover sm:w-full lg:aspect-square shadow-[0_25px_80px_rgba(0,150,0,0.85)]"
                 />
+
+
+
+
               </div>
             </div>
           </section>
@@ -150,7 +155,7 @@ export default function Home() {
                   <div className="inline-block rounded-lg bg-green-100 dark:bg-green-900/30 px-3 py-1 text-sm text-green-800 dark:text-green-300">
                     Platform Benefits
                   </div>
-                  <h2 className="text-3xl font-bold tracking-tighter md:text-4xl">Why Choose FarmConnect</h2>
+                  <h2 className="text-3xl font-bold tracking-tighter md:text-4xl">Why Choose AgriConnect</h2>
                   <p className="max-w-[900px] text-muted-foreground md:text-xl">
                     Our platform offers unique advantages for both farmers and businesses.
                   </p>
@@ -227,12 +232,12 @@ export default function Home() {
                       className="rounded-full"
                     />
                     <div>
-                      <h3 className="text-lg font-bold">John Smith</h3>
+                      <h3 className="text-lg font-bold">Ramesh</h3>
                       <p className="text-sm text-muted-foreground">Organic Vegetable Farmer</p>
                     </div>
                   </div>
                   <p className="mt-4 text-muted-foreground">
-                    "Since joining FarmConnect, I've increased my profit margins by 30% and built relationships with
+                    "Since joining AgriConnect, I've increased my profit margins by 30% and built relationships with
                     restaurants and grocery stores I never had access to before."
                   </p>
                 </div>
@@ -246,12 +251,12 @@ export default function Home() {
                       className="rounded-full"
                     />
                     <div>
-                      <h3 className="text-lg font-bold">Sarah Johnson</h3>
+                      <h3 className="text-lg font-bold">Ramdayal</h3>
                       <p className="text-sm text-muted-foreground">Restaurant Owner</p>
                     </div>
                   </div>
                   <p className="mt-4 text-muted-foreground">
-                    "FarmConnect has revolutionized our supply chain. We now source directly from local farmers,
+                    "AgriConnect has revolutionized our supply chain. We now source directly from local farmers,
                     ensuring fresher ingredients and supporting our community."
                   </p>
                 </div>
@@ -259,7 +264,7 @@ export default function Home() {
             </div>
           </section>
 
-          <section id="pricing" className="w-full py-12 md:py-24 lg:py-32">
+          {/* <section id="pricing" className="w-full py-12 md:py-24 lg:py-32">
             <div className="container px-4 md:px-6">
               <div className="flex flex-col items-center justify-center space-y-4 text-center">
                 <div className="space-y-2">
@@ -352,7 +357,7 @@ export default function Home() {
                 </div>
               </div>
             </div>
-          </section>
+          </section> */}
 
           <section className="w-full py-12 md:py-24 lg:py-32 bg-green-600 dark:bg-green-800 text-white">
             <div className="container px-4 md:px-6">
@@ -406,7 +411,7 @@ export default function Home() {
 
 import { useTheme } from "next-themes"
 
-interface ThemeToggleProps extends React.HTMLAttributes<HTMLButtonElement> {}
+interface ThemeToggleProps extends React.HTMLAttributes<HTMLButtonElement> { }
 
 const ThemeToggle = React.forwardRef<HTMLButtonElement, ThemeToggleProps>(({ className, ...props }, ref) => {
   const { setTheme } = useTheme()

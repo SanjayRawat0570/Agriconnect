@@ -7,7 +7,8 @@ import { Label } from "@/components/ui/label"
 
 export default function LoginPage() {
   return (
-    <div className="min-h-screen flex items-center justify-center p-4 bg-gradient-to-b from-amber-50 to-green-50 ">
+    <div className="min-h-screen flex items-center justify-center p-4 ">
+
       <Card className="w-full max-w-md border-green-100 shadow-md
       bg-green-300 border-2 rounded-lg transition-transform transform hover:scale-105 duration-300">
         <CardHeader className="space-y-2 text-center">

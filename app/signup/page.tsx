@@ -13,7 +13,7 @@ export default function SignupPage() {
   const [userType, setUserType] = useState<string>("buyer")
 
   return (
-    <div className="min-h-screen flex items-center justify-center p-4 bg-gradient-to-b from-amber-50 to-green-50">
+    <div className="min-h-screen flex items-center justify-center p-4 bg-gradient-to-b">
       <Card className="w-full max-w-md 
       bg-green-300 border-green-100 shadow-md">
         <CardHeader className="space-y-2 text-center">

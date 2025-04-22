@@ -32,13 +32,9 @@ export function ProductFilters({ filterOptions, onFilterChange, maxPrice }: Prod
   const categories: { value: ProductCategory; label: string }[] = [
     { value: "vegetables", label: "Vegetables" },
     { value: "fruits", label: "Fruits" },
-    { value: "dairy", label: "Dairy" },
-    { value: "eggs", label: "Eggs" },
-    { value: "meat", label: "Meat" },
-    { value: "herbs", label: "Herbs" },
-    { value: "honey", label: "Honey" },
-    { value: "baked", label: "Baked Goods" },
-    { value: "preserves", label: "Preserves" },
+    { value: "spices", label: "Spices" },
+    { value: "grains", label: "Grains" },
+    { value: "pulses", label: "Pulses" },
   ]
 
   const sortOptions = [
@@ -160,8 +156,8 @@ export function ProductFilters({ filterOptions, onFilterChange, maxPrice }: Prod
                   className="my-4"
                 />
                 <div className="flex items-center justify-between text-sm">
-                  <span>${priceRange[0]}</span>
-                  <span>${priceRange[1]}</span>
+                  <span>₹{priceRange[0]}</span>
+                  <span>₹{priceRange[1]}</span>
                 </div>
               </div>
             </div>

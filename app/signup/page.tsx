@@ -8,6 +8,7 @@ import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle }
 import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
 import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group"
+import { ArrowLeft } from "lucide-react"
 
 export default function SignupPage() {
   const [userType, setUserType] = useState<string>("buyer")
@@ -17,8 +18,14 @@ export default function SignupPage() {
       <Card className="w-full max-w-md 
       bg-green-300 border-green-100 shadow-md">
         <CardHeader className="space-y-2 text-center">
+          <Link href="/">
+            <Button className="flex items-center justify-center mr-auto ml-0 bg-green-300 hover:bg-green-500 h-5 w-5 ">
+              <ArrowLeft className="text-green-700 w-6 h-5" size={20} />
+            </Button>
+          </Link>
           <div className="mx-auto w-16 h-16 mb-2 relative">
             <div className="absolute inset-0 rounded-full bg-green-100 animate-pulse"></div>
+
             <Image
               src="/logo.png?height=64&width=64"
               alt="Farmers Marketplace Logo"

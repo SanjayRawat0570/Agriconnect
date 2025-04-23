@@ -4,13 +4,18 @@ import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card"
 import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
-
+import { ArrowLeft } from "lucide-react"
 export default function LoginPage() {
   return (
     <div className="min-h-screen flex items-center justify-center p-4 ">
 
       <Card className="w-full max-w-md border-green-100 shadow-md
       bg-green-300 border-2 rounded-lg transition-transform transform hover:scale-105 duration-300">
+        <Link href="/">
+          <Button className="flex items-center justify-center mr-auto ml-3 mt-3 bg-green-300 hover:bg-green-500 h-5 w-5 ">
+            <ArrowLeft className="text-green-700 w-6 h-5" size={20} />
+          </Button>
+        </Link>
         <CardHeader className="space-y-2 text-center">
           <div className="mx-auto w-16 h-16 mb-2 relative">
             <div className="absolute inset-0 rounded-full bg-green-100 animate-pulse"></div>
@@ -56,7 +61,7 @@ export default function LoginPage() {
               type="password"
               placeholder="Enter your password"
               className="border-green-200 focus:border-green-500 focus:ring-green-500
-              placeholder:text-green-700 bg-green-300"  
+              placeholder:text-green-700 bg-green-300"
               required
             />
           </div>

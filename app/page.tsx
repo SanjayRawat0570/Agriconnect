@@ -148,218 +148,16 @@ export default function Home() {
             </div>
           </section>
 
-          <section id="features" className="w-full py-12 md:py-24 lg:py-32">
-            <div className="container px-4 md:px-6">
-              <div className="flex flex-col items-center justify-center space-y-4 text-center">
-                <div className="space-y-2">
-                  <div className="inline-block rounded-lg bg-green-100 dark:bg-green-900/30 px-3 py-1 text-sm text-green-800 dark:text-green-300">
-                    Platform Benefits
-                  </div>
-                  <h2 className="text-3xl font-bold tracking-tighter md:text-4xl">Why Choose AgriConnect</h2>
-                  <p className="max-w-[900px] text-muted-foreground md:text-xl">
-                    Our platform offers unique advantages for both farmers and businesses.
-                  </p>
-                </div>
-              </div>
-              <div className="mx-auto grid max-w-5xl gap-6 py-12 lg:grid-cols-2 lg:gap-12">
-                <div className="grid gap-6">
-                  <div className="flex items-start gap-4">
-                    <div className="flex h-10 w-10 items-center justify-center rounded-full bg-green-100 dark:bg-green-900/30">
-                      <BarChart3 className="h-5 w-5 text-green-600 dark:text-green-400" />
-                    </div>
-                    <div>
-                      <h3 className="text-xl font-bold">Better Profit Margins</h3>
-                      <p className="text-muted-foreground">
-                        Farmers earn more by selling directly to businesses without intermediaries.
-                      </p>
-                    </div>
-                  </div>
-                  <div className="flex items-start gap-4">
-                    <div className="flex h-10 w-10 items-center justify-center rounded-full bg-green-100 dark:bg-green-900/30">
-                      <ShieldCheck className="h-5 w-5 text-green-600 dark:text-green-400" />
-                    </div>
-                    <div>
-                      <h3 className="text-xl font-bold">Quality Assurance</h3>
-                      <p className="text-muted-foreground">
-                        Verified profiles and reviews ensure quality products and reliable transactions.
-                      </p>
-                    </div>
-                  </div>
-                  <div className="flex items-start gap-4">
-                    <div className="flex h-10 w-10 items-center justify-center rounded-full bg-green-100 dark:bg-green-900/30">
-                      <Users className="h-5 w-5 text-green-600 dark:text-green-400" />
-                    </div>
-                    <div>
-                      <h3 className="text-xl font-bold">Community Support</h3>
-                      <p className="text-muted-foreground">
-                        Join a network of farmers and businesses sharing knowledge and best practices.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <Image
-                  src="/placeholder2.png?height=400&width=400"
-                  width={400}
-                  height={400}
-                  alt="Platform features"
-                  className="mx-auto aspect-square overflow-hidden rounded-xl object-cover"
-                />
-              </div>
-            </div>
-          </section>
+          {/* Benefits Section */}
 
-          <section id="testimonials" className="w-full py-12 md:py-24 lg:py-32 bg-muted dark:bg-muted/50">
-            <div className="container px-4 md:px-6">
-              <div className="flex flex-col items-center justify-center space-y-4 text-center">
-                <div className="space-y-2">
-                  <div className="inline-block rounded-lg bg-green-100 dark:bg-green-900/30 px-3 py-1 text-sm text-green-800 dark:text-green-300">
-                    Success Stories
-                  </div>
-                  <h2 className="text-3xl font-bold tracking-tighter md:text-4xl">What Our Users Say</h2>
-                  <p className="max-w-[900px] text-muted-foreground md:text-xl">
-                    Hear from farmers and businesses who have transformed their operations with FarmConnect.
-                  </p>
-                </div>
-              </div>
-              <div className="mx-auto grid max-w-5xl gap-6 py-12 md:grid-cols-2 lg:gap-12">
-                <div className="rounded-lg border bg-background p-6">
-                  <div className="flex items-start gap-4">
-                    <Image
-                      src="/profile.png?height=60&width=60"
-                      width={60}
-                      height={60}
-                      alt="Farmer portrait"
-                      className="rounded-full"
-                    />
-                    <div>
-                      <h3 className="text-lg font-bold">Ramesh</h3>
-                      <p className="text-sm text-muted-foreground">Organic Vegetable Farmer</p>
-                    </div>
-                  </div>
-                  <p className="mt-4 text-muted-foreground">
-                    "Since joining AgriConnect, I've increased my profit margins by 30% and built relationships with
-                    restaurants and grocery stores I never had access to before."
-                  </p>
-                </div>
-                <div className="rounded-lg border bg-background p-6">
-                  <div className="flex items-start gap-4">
-                    <Image
-                      src="/profile.png?height=60&width=60"
-                      width={60}
-                      height={60}
-                      alt="Business owner portrait"
-                      className="rounded-full"
-                    />
-                    <div>
-                      <h3 className="text-lg font-bold">Ramdayal</h3>
-                      <p className="text-sm text-muted-foreground">Restaurant Owner</p>
-                    </div>
-                  </div>
-                  <p className="mt-4 text-muted-foreground">
-                    "AgriConnect has revolutionized our supply chain. We now source directly from local farmers,
-                    ensuring fresher ingredients and supporting our community."
-                  </p>
-                </div>
-              </div>
-            </div>
-          </section>
+          <Benefits/>
+          
+      
+            {/* Testimonials Section */}    
+          <Reviews/>
+          
 
-          {/* <section id="pricing" className="w-full py-12 md:py-24 lg:py-32">
-            <div className="container px-4 md:px-6">
-              <div className="flex flex-col items-center justify-center space-y-4 text-center">
-                <div className="space-y-2">
-                  <div className="inline-block rounded-lg bg-green-100 dark:bg-green-900/30 px-3 py-1 text-sm text-green-800 dark:text-green-300">
-                    Pricing Plans
-                  </div>
-                  <h2 className="text-3xl font-bold tracking-tighter md:text-4xl">Simple, Transparent Pricing</h2>
-                  <p className="max-w-[900px] text-muted-foreground md:text-xl">
-                    Choose the plan that works best for your business needs.
-                  </p>
-                </div>
-              </div>
-              <div className="mx-auto grid max-w-5xl gap-6 py-12 md:grid-cols-2 lg:grid-cols-3">
-                <div className="rounded-lg border bg-background p-6">
-                  <div className="mb-4 flex flex-col gap-1">
-                    <h3 className="text-xl font-bold">Basic</h3>
-                    <p className="text-sm text-muted-foreground">For small-scale farmers</p>
-                    <p className="text-3xl font-bold">$0</p>
-                    <p className="text-sm text-muted-foreground">Free forever</p>
-                  </div>
-                  <ul className="mb-6 space-y-2 text-sm">
-                    <li className="flex items-center">
-                      <ShieldCheck className="mr-2 h-4 w-4 text-green-600" />
-                      List up to 5 crops
-                    </li>
-                    <li className="flex items-center">
-                      <ShieldCheck className="mr-2 h-4 w-4 text-green-600" />
-                      Basic analytics
-                    </li>
-                    <li className="flex items-center">
-                      <ShieldCheck className="mr-2 h-4 w-4 text-green-600" />
-                      Email support
-                    </li>
-                  </ul>
-                  <Button className="w-full">Get Started</Button>
-                </div>
-                <div className="rounded-lg border bg-background p-6 ring-2 ring-green-600">
-                  <div className="mb-4 flex flex-col gap-1">
-                    <h3 className="text-xl font-bold">Pro</h3>
-                    <p className="text-sm text-muted-foreground">For growing farm businesses</p>
-                    <p className="text-3xl font-bold">$29</p>
-                    <p className="text-sm text-muted-foreground">per month</p>
-                  </div>
-                  <ul className="mb-6 space-y-2 text-sm">
-                    <li className="flex items-center">
-                      <ShieldCheck className="mr-2 h-4 w-4 text-green-600" />
-                      Unlimited crop listings
-                    </li>
-                    <li className="flex items-center">
-                      <ShieldCheck className="mr-2 h-4 w-4 text-green-600" />
-                      Advanced analytics
-                    </li>
-                    <li className="flex items-center">
-                      <ShieldCheck className="mr-2 h-4 w-4 text-green-600" />
-                      Priority support
-                    </li>
-                    <li className="flex items-center">
-                      <ShieldCheck className="mr-2 h-4 w-4 text-green-600" />
-                      Featured listings
-                    </li>
-                  </ul>
-                  <Button className="w-full bg-green-600 hover:bg-green-700">Get Started</Button>
-                </div>
-                <div className="rounded-lg border bg-background p-6">
-                  <div className="mb-4 flex flex-col gap-1">
-                    <h3 className="text-xl font-bold">Business</h3>
-                    <p className="text-sm text-muted-foreground">For food businesses</p>
-                    <p className="text-3xl font-bold">$49</p>
-                    <p className="text-sm text-muted-foreground">per month</p>
-                  </div>
-                  <ul className="mb-6 space-y-2 text-sm">
-                    <li className="flex items-center">
-                      <ShieldCheck className="mr-2 h-4 w-4 text-green-600" />
-                      Advanced search filters
-                    </li>
-                    <li className="flex items-center">
-                      <ShieldCheck className="mr-2 h-4 w-4 text-green-600" />
-                      Bulk ordering
-                    </li>
-                    <li className="flex items-center">
-                      <ShieldCheck className="mr-2 h-4 w-4 text-green-600" />
-                      Supply chain analytics
-                    </li>
-                    <li className="flex items-center">
-                      <ShieldCheck className="mr-2 h-4 w-4 text-green-600" />
-                      Dedicated account manager
-                    </li>
-                  </ul>
-                  <Button className="w-full">Get Started</Button>
-                </div>
-              </div>
-            </div>
-          </section> */}
-
-          <section className="w-full py-12 md:py-24 lg:py-32 bg-green-600 dark:bg-green-700 text-white">
+          <section className="w-full py-12 md:py-24 lg:py-32 bg-green-600 dark:bg-green-500 text-white">
             <div className="container px-4 md:px-6">
               <div className="flex flex-col items-center justify-center space-y-4 text-center">
                 <div className="space-y-2">
@@ -416,6 +214,8 @@ export default function Home() {
 }
 
 import { useTheme } from "next-themes"
+import Reviews from "./reviews"
+import Benefits from "./benefits"
 
 interface ThemeToggleProps extends React.HTMLAttributes<HTMLButtonElement> { }
 

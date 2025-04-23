@@ -170,7 +170,7 @@ export const mockProducts: Product[] = [
     id: "10",
     name: "Pure Cow Ghee",
     description: "Traditionally made pure ghee from cow's milk. Rich aroma and granular texture.",
-    price: 650, // Price per kg
+    price: 800, // Price per kg
     unit: "kg", // Often sold in jars, but kg is a standard unit
     image: "/placeholder.svg?height=400&width=400",
     category: "dairy",

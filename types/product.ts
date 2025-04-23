@@ -23,6 +23,7 @@ export type ProductCategory =
   | "spices"
   | "grains"
   | "pulses"
+  | "dairy"
 
 export interface ProductFilterOptions {
   category?: ProductCategory

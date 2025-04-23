@@ -17,6 +17,7 @@ import {
   Users,
   Moon,
   Sun,
+  ShoppingCart,
 } from "lucide-react"
 import { ThemeProvider } from "@/components/theme-provider"
 
@@ -49,9 +50,12 @@ export default function Home() {
               <Link href="/login" className="text-sm font-medium hover:underline underline-offset-4">
                 Log in
               </Link>
-              <Button asChild>
+              <Button asChild className="dark:bg-green-400 dark:text-white">
                 <Link href="/signup">Sign up</Link>
               </Button>
+              <Link href="/cart">
+               <ShoppingCart className="h-6 w-6 text-green-600" />
+              </Link>
             </div>
           </div>
         </header>

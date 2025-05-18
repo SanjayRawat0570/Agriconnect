@@ -1,8 +1,3 @@
-export const metadata = {
-  title: 'AgriConnect',
-  description: 'Connecting Farmers and Consumers',
-}
-
 "use client"
 
 import React from "react"
@@ -25,6 +20,12 @@ import {
   ShoppingCart,
 } from "lucide-react"
 import { ThemeProvider } from "@/components/theme-provider"
+
+export const metadata = {
+  title: 'AgriConnect',
+  description: 'Connecting Farmers and Consumers',
+}
+
 
 export default function Home() {
   return (

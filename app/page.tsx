@@ -1,3 +1,8 @@
+export const metadata = {
+  title: 'AgriConnect',
+  description: 'Connecting Farmers and Consumers',
+}
+
 "use client"
 
 import React from "react"

@@ -8,15 +8,10 @@ export const metadata: Metadata = {
   applicationName: 'AgriConnect',
   referrer: 'origin-when-cross-origin',
   keywords: ['AgriConnect', 'Farmers', 'Consumers', 'Agriculture'],
-  authors: [{ name: 'AgriConnect Team'}],
-  colorScheme: 'light dark',
+  authors: [{ name: 'AgriConnect Team' }],
   creator: 'AgriConnect Team',
   publisher: 'AgriConnect Team',
-  themeColor: [
-    { media: '(prefers-color-scheme: light)', color: '#ffffff' },
-    { media: '(prefers-color-scheme: dark)', color: '#000000' },
-  ]
-}
+};
 
 export default function RootLayout({
   children,
@@ -27,5 +22,5 @@ export default function RootLayout({
     <html lang="en">
       <body>{children}</body>
     </html>
-  )
+  );
 }

@@ -1,7 +1,6 @@
-// "use client"
+"use client"
 
 import React from "react"
-
 import Link from "next/link"
 import Image from "next/image"
 import { Button } from "@/components/ui/button"
@@ -12,20 +11,14 @@ import {
   Sprout,
   Building2,
   TruckIcon,
-  BarChart3,
-  ShieldCheck,
-  Users,
   Moon,
   Sun,
   ShoppingCart,
 } from "lucide-react"
 import { ThemeProvider } from "@/components/theme-provider"
-
-export const metadata = {
-  title: 'AgriConnect',
-  description: 'Connecting Farmers and Consumers',
-}
-
+import { useTheme } from "next-themes"
+import Reviews from "./reviews"
+import Benefits from "./benefits"
 
 export default function Home() {
   return (
@@ -60,11 +53,12 @@ export default function Home() {
                 <Link href="/signup">Sign up</Link>
               </Button>
               <Link href="/cart">
-               <ShoppingCart className="h-6 w-6 text-green-600" />
+                <ShoppingCart className="h-6 w-6 text-green-600" />
               </Link>
             </div>
           </div>
         </header>
+
         <main className="flex-1">
           <section className="w-full py-12 md:py-24 lg:py-32 xl:py-48">
             <div className="container px-4 md:px-6">
@@ -80,8 +74,8 @@ export default function Home() {
                     </p>
                   </div>
                   <div className="flex flex-col gap-2 min-[400px]:flex-row">
-                    <Button size="lg" className="bg-green-500 hover:bg-green-600 ">
-                      <Link href="/signup" className="flex items-center ">
+                    <Button size="lg" className="bg-green-500 hover:bg-green-600">
+                      <Link href="/signup" className="flex items-center">
                         Get Started <ArrowRight className="ml-2 h-4 w-4" />
                       </Link>
                     </Button>
@@ -99,16 +93,12 @@ export default function Home() {
                 </div>
 
                 <Image
-                  src="/placeholder1.png?height=550&width=550"
+                  src="/placeholder1.png"
                   width={550}
                   height={550}
                   alt="Farm produce"
                   className="mx-auto aspect-video overflow-hidden rounded-xl object-cover sm:w-full lg:aspect-square shadow-[0_25px_80px_rgba(0,150,0,0.85)]"
                 />
-
-
-
-
               </div>
             </div>
           </section>
@@ -158,14 +148,8 @@ export default function Home() {
             </div>
           </section>
 
-          {/* Benefits Section */}
-
-          <Benefits/>
-          
-      
-            {/* Testimonials Section */}    
-          <Reviews/>
-          
+          <Benefits />
+          <Reviews />
 
           <section className="w-full py-12 md:py-24 lg:py-32 bg-green-600 dark:bg-green-500 text-white">
             <div className="container px-4 md:px-6">
@@ -190,6 +174,7 @@ export default function Home() {
             </div>
           </section>
         </main>
+
         <footer className="w-full border-t bg-background py-6">
           <div className="container flex flex-col items-center justify-between gap-4 md:flex-row md:gap-0">
             <div className="flex items-center gap-2">
@@ -211,7 +196,6 @@ export default function Home() {
               >
                 Contact
               </a>
-
             </nav>
             <p className="text-sm text-muted-foreground">
               &copy; {new Date().getFullYear()} AgriConnect. All rights reserved.
@@ -223,11 +207,7 @@ export default function Home() {
   )
 }
 
-import { useTheme } from "next-themes"
-import Reviews from "./reviews"
-import Benefits from "./benefits"
-
-interface ThemeToggleProps extends React.HTMLAttributes<HTMLButtonElement> { }
+interface ThemeToggleProps extends React.HTMLAttributes<HTMLButtonElement> {}
 
 const ThemeToggle = React.forwardRef<HTMLButtonElement, ThemeToggleProps>(({ className, ...props }, ref) => {
   const { setTheme } = useTheme()
@@ -247,5 +227,4 @@ const ThemeToggle = React.forwardRef<HTMLButtonElement, ThemeToggleProps>(({ cla
     </Button>
   )
 })
-ThemeToggle.displayName = "ThemeToggle"
-
+ThemeToggle.displayName = "ThemeToggle";
